@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\forcerunasinvoker]
+@="Run without admin rights (UAC)"
+
+[HKEY_CLASSES_ROOT\*\shell\forcerunasinvoker\command]
+@="cmd /min /C \"set __COMPAT_LAYER=RUNASINVOKER && start \"\" \"%1\"\""
